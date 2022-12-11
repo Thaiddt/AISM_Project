@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.Options"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.Menu"/>
     <fullyQualifiedTypeName name="hust.soict.dsai.aims.media.Media"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.store.Store"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.Aims"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.cd.Track"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.disc.DigitalVideoDisc"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.media.MediaComparatorByTitleCost"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.cart.Cart"/>
+    <fullyQualifiedTypeName name="java.awt.print.Book"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.book.Book"/>
+    <fullyQualifiedTypeName name="hust.soict.dsai.aims.cd.CompactDisc"/>
 </qualifiedTypeNameHistroy>

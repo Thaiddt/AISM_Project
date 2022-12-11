@@ -27,4 +27,15 @@ public class Store {
 			System.out.println("The item has been deleted");
 		}
 	}
+	
+	public void viewStore() {
+		for (Media media : itemInStore) {
+			System.out.println(media.toString());;
+		}
+	}
+
+	public List<Media> getItemInStore() {
+		return itemInStore;
+	}
+	
 }

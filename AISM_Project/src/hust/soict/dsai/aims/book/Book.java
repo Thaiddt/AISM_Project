@@ -43,5 +43,7 @@ public class Book extends Media{
 //			}
 //			System.out.println("\t------------------------------------------------------");
 //		}
-		
+	public String toString() {
+		return super.getTitle() + "\t\t" + super.getCatogary() + "\t\t" + super.getCost() + "\n";
+	}
 }

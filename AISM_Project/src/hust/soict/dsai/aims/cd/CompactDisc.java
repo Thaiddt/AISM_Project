@@ -31,7 +31,7 @@ public class CompactDisc extends Disc implements Playable{
 		this.artist = artist;
 	}
 
-	public void addAuthor(Track trackName) {
+	public void addTrack(Track trackName) {
 		if (tracks.contains(trackName) == true) {
 			System.out.println("The track has been already ");
 		}else {
@@ -40,7 +40,7 @@ public class CompactDisc extends Disc implements Playable{
 		}
 	}
 	
-	public void removeAuthor(Track trackName) {
+	public void removeTrack(Track trackName) {
 		if (tracks.size() == 0) {
 			System.out.println("Don't have track in list");
 		}else if(tracks.contains(trackName) == false){
@@ -62,8 +62,12 @@ public class CompactDisc extends Disc implements Playable{
 	@Override
 	public void play() {
 		for (Track track : tracks) {
-			track.play();
+			System.out.println("Playing DVD: " + track.getTitle());
+			System.out.println("DVD length: " + track.getLength());	
 			System.out.println();
 		}
+	}
+	public String toString() {
+		return super.getTitle() + "\t\t" + super.getCatogary() + "\t\t" + getArtist() + "\t\t" + super.getDetector() + "\t\t" + super.getLength() + "\t\t" + super.getCost() + "\n";
 	}
 }

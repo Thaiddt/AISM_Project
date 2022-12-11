@@ -1,8 +1,11 @@
 package hust.soict.dsai.aims.cart;
 
+import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.List;
 
+import hust.soict.dsai.aims.cd.CompactDisc;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Media;
 
 public class Cart {
@@ -28,6 +31,10 @@ public class Cart {
 		}
 	}
 	
+	public void removeAllMedia() {
+		itemsOrdered.removeAll(itemsOrdered);
+	}
+	
 	public float totalCost() {
 		float totalCost = 0;
 		for (Media item : itemsOrdered) {
@@ -35,4 +42,25 @@ public class Cart {
 		}
 		return totalCost;
 	}
+	public void viewCart() {
+		for (Media media : itemsOrdered) {
+			System.out.println(media.toString());;
+		}
+	}
+	
+	public List<Media> getItemsOrdered() {
+		return itemsOrdered;
+	}
+
+	public void getNumberDVD() {
+		int i = 0;
+		for (Media media : itemsOrdered) {
+			if (media instanceof DigitalVideoDisc) {
+				i++;
+			}
+		}
+		System.out.println("The number of DVDs in the current cart: " + i + " (DVDs)");
+		
+	}
+	
 }
